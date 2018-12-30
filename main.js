@@ -37,3 +37,5 @@ const businessArray = [
   'Bar',
   'Exchange'
 ];
+
+//Clicking 'generate' button should call function that returns random element from each array
