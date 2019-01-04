@@ -39,3 +39,9 @@ const businessArray = [
 ];
 
 //Clicking 'generate' button should call function that returns random element from each array
+
+const businessGenerator() {
+  let businessName = '';
+  businessName = neighborhoodArray[Math.floor(Math.random * neighborhoodArray.length)];
+  return businessName;
+}
