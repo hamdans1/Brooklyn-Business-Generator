@@ -1,5 +1,7 @@
+//businessName generated from function call
 let businessName = '';
 
+//array fixtures
 const neighborhoodArray = [
   'Clinton Hill',
   'Cobble Hill',
@@ -42,6 +44,7 @@ const businessArray = [
 
 //Clicking 'generate' button should call function that returns random element from each array
 
+// generates new business name
 const businessGenerator = () => {
   let randomNeighborhood = neighborhoodArray[Math.floor(Math.random() * neighborhoodArray.length)];
   let randomDescriptor = descriptorArray[Math.floor(Math.random() * descriptorArray.length)];
@@ -50,3 +53,8 @@ const businessGenerator = () => {
   businessName = `${randomNeighborhood} ${randomDescriptor} ${randomProduct} ${randomBusiness}`;
   return businessName;
 };
+
+$('generate-btn').click(function() {
+  businessGenerator();
+  
+})
