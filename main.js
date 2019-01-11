@@ -54,7 +54,4 @@ const businessGenerator = () => {
   return businessName;
 };
 
-$('generate-btn').click(function() {
-  businessGenerator();
-  
-})
+const generateBtn = document.getElementsByClassName('generate-btn');
